@@ -1,26 +1,23 @@
 function mostrar()
 {
-var edad
+//tomo la edad  
+var edad ;
+edad = parseInt(document.getElementById("edad").value) ;
 
-edad = parseInt(document.getElementById("edad").value);
-
-// Añadi encerre a la condicion en parentesis y le añadi el "not" (!) para volver verdad una condicion falsa.
-
-if (!(edad >= 13 && edad <= 17)){
-
-alert("No es adolescente");
-
+            // Si su edad es menor a 13 O mayor a 18
+if(edad < 13 || edad >= 18)
+{
+    alert("No sos adolescente") ;
 }
+                       /* Tambien se podria hacer negando la edad.
 
-//Aca hice lo mismo pero invertido. Añadiendo "pipe" (||) entre las dos condiciones
+                        aca se niega los valores de adolescencia (entre 13 y 17 años)
 
-
-//if (edad < 13 || edad > 17){
-
-    //alert("No es adolescente");
-
-
-
-
+                     if ( !(edad >= 13 && edad <= 17))
+                        {
+                                  alert("adolescente")
+                        }
+                                                                                      */ 
+ 
 
 }//FIN DE LA FUNCIÓN
